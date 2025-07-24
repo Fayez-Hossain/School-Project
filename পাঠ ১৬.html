@@ -129,6 +129,77 @@
     </style>
 </head>
 <body>
+
+
+     
+         <header>
+    <h1>পাঠ ১৬: ক্ষতিকারক সফটওয়্যার</h1>
+    <p>তৈরি করেছেন: <strong>TANZIM ARAFAT ORNOB</strong> | শ্রেণি ৮</p>
+    <img class="profile-pic" src="arnob.jpg" alt="Tanzim Arafat Ornob">
+  </header>
+
+  <main>
+    <section class="box">
+      <h2>১. ভাইরাস (Virus)</h2>
+      <p>ভাইরাস একটি প্রোগ্রাম যা স্বয়ংক্রিয়ভাবে নিজেকে কপি করে এবং অন্যান্য ফাইল বা কম্পিউটারে ছড়িয়ে পড়ে। এটি সিস্টেমের কার্যক্ষমতা নষ্ট করতে পারে।</p>
+      <img src="virus.webp" alt="ভাইরাস">
+    </section>
+
+
+    <section class="box">
+      <h2>৩. স্পাইওয়্যার (Spyware)</h2>
+      <p>স্পাইওয়্যার ব্যবহারকারীর অজান্তে তথ্য চুরি করে যেমন পাসওয়ার্ড, ব্রাউজিং হিস্টরি ইত্যাদি। এটি গোপনে কার্যকর হয়।</p>
+      <img src="spyware.jfif" alt="স্পাইওয়্যার">
+    </section>
+
+  
+
+    <section class="box">
+      <h2>৫. অ্যাডওয়্যার (Adware)</h2>
+      <p>অ্যাডওয়্যার ব্যবহারকারীর অজান্তে বিজ্ঞাপন প্রদর্শন করে এবং অনেক সময় ইচ্ছার বিরুদ্ধে সফটওয়্যার ইনস্টল করে।</p>
+      <img src="adware.jfif" alt="অ্যাডওয়্যার">
+    </section>
+
+
+    <section class="box">
+      <h2>৭. সুরক্ষার উপায়</h2>
+      <ul>
+        <li>নিয়মিত অ্যান্টিভাইরাস ব্যবহার ও আপডেট করুন।</li>
+        <li>অজানা ইমেল বা লিঙ্কে ক্লিক করবেন না।</li>
+        <li>বিশ্বস্ত উৎস ছাড়া সফটওয়্যার ইনস্টল করবেন না।</li>
+        <li>গুরুত্বপূর্ণ তথ্য নিরাপদে সংরক্ষণ করুন।</li>
+      </ul>
+    </section>
+
+    <section class="box">
+      <h2>৮. ফিডব্যাক দিন</h2>
+      <form id="feedbackForm">
+        <label>আপনার নাম:</label>
+        <input type="text" id="name" placeholder="নাম লিখুন" required>
+
+        <label>আপনার মন্তব্য:</label>
+        <textarea id="comment" rows="4" placeholder="আপনার মতামত লিখুন..." required></textarea>
+
+        <button type="submit">পাঠান</button>
+        <button type="reset">রিসেট করুন</button>
+      </form>
+      <p id="msg"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; ২০২৫ | শ্রেণি ৮ ICT | তৈরি করেছেন: TANZIM ARAFAT ORNOB</p>
+  </footer>
+
+  <script>
+    document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const msg = document.getElementById("msg");
+      msg.textContent = ধন্যবাদ, ${name}! আপনার ফিডব্যাক গ্রহণ করা হয়েছে।;
+    });
+  </script>
+
       <div>
         <h2 style="text-align: center;">
             পাঠ ১৬: ক্ষতিকারক সফটওয়্যার।
@@ -278,74 +349,7 @@
        
        <br><br><br><br><br>
 
-       
-         <header>
-    <h1>পাঠ ১৬: ক্ষতিকারক সফটওয়্যার</h1>
-    <p>তৈরি করেছেন: <strong>TANZIM ARAFAT ORNOB</strong> | শ্রেণি ৮</p>
-    <img class="profile-pic" src="arnob.jpg" alt="Tanzim Arafat Ornob">
-  </header>
-
-  <main>
-    <section class="box">
-      <h2>১. ভাইরাস (Virus)</h2>
-      <p>ভাইরাস একটি প্রোগ্রাম যা স্বয়ংক্রিয়ভাবে নিজেকে কপি করে এবং অন্যান্য ফাইল বা কম্পিউটারে ছড়িয়ে পড়ে। এটি সিস্টেমের কার্যক্ষমতা নষ্ট করতে পারে।</p>
-      <img src="virus.webp" alt="ভাইরাস">
-    </section>
-
-
-    <section class="box">
-      <h2>৩. স্পাইওয়্যার (Spyware)</h2>
-      <p>স্পাইওয়্যার ব্যবহারকারীর অজান্তে তথ্য চুরি করে যেমন পাসওয়ার্ড, ব্রাউজিং হিস্টরি ইত্যাদি। এটি গোপনে কার্যকর হয়।</p>
-      <img src="spyware.jfif" alt="স্পাইওয়্যার">
-    </section>
-
-  
-
-    <section class="box">
-      <h2>৫. অ্যাডওয়্যার (Adware)</h2>
-      <p>অ্যাডওয়্যার ব্যবহারকারীর অজান্তে বিজ্ঞাপন প্রদর্শন করে এবং অনেক সময় ইচ্ছার বিরুদ্ধে সফটওয়্যার ইনস্টল করে।</p>
-      <img src="adware.jfif" alt="অ্যাডওয়্যার">
-    </section>
-
-
-    <section class="box">
-      <h2>৭. সুরক্ষার উপায়</h2>
-      <ul>
-        <li>নিয়মিত অ্যান্টিভাইরাস ব্যবহার ও আপডেট করুন।</li>
-        <li>অজানা ইমেল বা লিঙ্কে ক্লিক করবেন না।</li>
-        <li>বিশ্বস্ত উৎস ছাড়া সফটওয়্যার ইনস্টল করবেন না।</li>
-        <li>গুরুত্বপূর্ণ তথ্য নিরাপদে সংরক্ষণ করুন।</li>
-      </ul>
-    </section>
-
-    <section class="box">
-      <h2>৮. ফিডব্যাক দিন</h2>
-      <form id="feedbackForm">
-        <label>আপনার নাম:</label>
-        <input type="text" id="name" placeholder="নাম লিখুন" required>
-
-        <label>আপনার মন্তব্য:</label>
-        <textarea id="comment" rows="4" placeholder="আপনার মতামত লিখুন..." required></textarea>
-
-        <button type="submit">পাঠান</button>
-        <button type="reset">রিসেট করুন</button>
-      </form>
-      <p id="msg"></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; ২০২৫ | শ্রেণি ৮ ICT | তৈরি করেছেন: TANZIM ARAFAT ORNOB</p>
-  </footer>
-
-  <script>
-    document.getElementById("feedbackForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const name = document.getElementById("name").value;
-      const msg = document.getElementById("msg");
-      msg.textContent = ধন্যবাদ, ${name}! আপনার ফিডব্যাক গ্রহণ করা হয়েছে।;
-    });
-  </script>
+      
 
 
 
