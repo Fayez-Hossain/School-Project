@@ -1,22 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>School Project</title>
-    <style>
-        .link{
-            border: 3px solid black;
-        }
-        a:hover{
-            background-color: aqua;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>কম্পিউটার ভাইরাস শিক্ষা</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f6fb;
+      color: #333;
+      padding: 30px;
+    }
+
+    header {
+      background-color: #2196f3;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      background-color: #fff;
+      padding: 10px 18px;
+      border-radius: 8px;
+      color: #2196f3;
+      font-weight: bold;
+      border: 2px solid #2196f3;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #2196f3;
+      color: white;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .card-text {
+      flex: 1;
+    }
+
+    .card h2 {
+      color: #1976d2;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .creator {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .creator img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #2196f3;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+   
+  .typing {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 10px;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink .8s infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink {
+    0%, 100% { border-color: transparent }
+    50% { border-color: white }
+  }
+
+
+  </style>
 </head>
 <body>
-   <h1>
-        part 17
-    </h1>
+
+ <header>
+  <h1>পাঠ ১৭</h1>
+  <p class="typing">কম্পিউটার ভাইরাস</p>
+</header>
+
+  <nav>
+    <a href="#reboot">রিবুট</a>
+    <a href="#non-resident">নন-রেসিডেন্ট ভাইরাস</a>
+    <a href="#resident">রেসিডেন্ট ভাইরাস</a>
+  </nav>
+
+  <div class="card" id="reboot">
+    <img src="reboot.webp" alt="Reboot">
+    <div class="card-text">
+      <h2>রিবুট (Reboot)</h2>
+      <p>রিবুট হলো একটি পদ্ধতি যার মাধ্যমে কম্পিউটার পুনরায় চালু হয়, এবং অনেক সময় সমস্যার সমাধান হয় বা আপডেট কার্যকর হয়।</p>
+    </div>
+  </div>
+
+  <div class="card" id="non-resident">
+    <img src="non.webp" alt="Non-Resident Virus">
+    <div class="card-text">
+      <h2>নন-রেসিডেন্ট ভাইরাস (Non-resident Virus)</h2>
+      <p>এই ভাইরাসগুলো RAM-এ স্থায়ীভাবে থাকে না। সংক্রামিত ফাইল চালু হলে তারা কাজ করে এবং বন্ধ হয়ে যায়।</p>
+    </div>
+  </div>
+
+  <div class="card" id="resident">
+    <img src="resident_virus.jpg" alt="Resident Virus">
+    <div class="card-text">
+      <h2>রেসিডেন্ট ভাইরাস (Resident Virus)</h2>
+      <p>রেসিডেন্ট ভাইরাস RAM-এ স্থায়ীভাবে অবস্থান করে এবং চলমান অবস্থায় ফাইল সংক্রমণ করে থাকে।</p>
+    </div>
+  </div>
+
+  <div class="creator">
+    <h3>নির্মাতা: Prince </h3>
+    <img src="prince.jpg" alt="Prince Picture">
+  </div>
+
+  <footer>
+    &copy; ২০২৫ | তৈরি করেছেন Prince | School Project
+  </footer>
+
+   <br><br><br>
     <div>
             <p>
                <p style="color: blue;">
@@ -35,5 +201,16 @@
             </DIV>
             </p>
         </div>
+
 </body>
 </html>
+
+
+
+   
+
+
+
+
+
+
