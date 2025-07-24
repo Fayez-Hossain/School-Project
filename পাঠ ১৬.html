@@ -11,12 +11,346 @@
         a:hover{
             background-color: aqua;
         }
+        body{
+            background-color: #E5D9F2;
+            background-attachment: fixed;
+        }
+        .pro{
+            margin-left: 20px;
+            border: 3px dotted green;
+            width: 500px;
+        }
+        .malware{
+            width: 500px;
+            border: 5px dotted green;
+        }
+        .worm{
+            width: 500px;
+            border: 3px solid black;
+        }
+        .trojan{
+            width: 500px;
+            border: 4px solid black;
+        }
+        .exe{
+            height: 300px;
+        }
+
+            body {
+      font-family: 'Kalpurush', sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #d0eaff;
+      padding: 15px;
+      position: relative;
+    }
+    header h1 {
+      color: #003366;
+      font-size: 1.8em;
+      margin: 0;
+    }
+    header p {
+      margin: 5px 0 0 0;
+      font-size: 1em;
+    }
+    .profile-pic {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #0044cc;
+    }
+    main {
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .box {
+      background: #ffffff;
+      border: 2px solid #0044cc;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    .box h2 {
+      background: yellow;
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 4px;
+      color: #003366;
+      font-weight: bold;
+    }
+    .box img {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 10px;
+      border: 2px solid green;
+      border-radius: 5px;
+    }
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      padding: 10px 16px;
+      background: #0044cc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 8px;
+    }
+    #msg {
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+    }
+    footer {
+      background-color: #d0eaff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
     </style>
 </head>
 <body>
-        <h1>
-        part 16
-    </h1>
+      <div>
+        <h2 style="text-align: center;">
+            পাঠ ১৬: ক্ষতিকারক সফটওয়্যার।
+        </h2>
+        <p style="text-align: center; color: blue;">
+            <b style="color: red;">Key Words:</b> প্রোগ্রামিং কোড, ম্যালওয়্যার, ওয়ার্ম, ট্রিজান হর্স, Excutable File, মরিচ ওয়ার্ম,।
+        </p>
+        <br><br><br><br><br>
+
+
+
+
+       <blockquote>
+         <div>
+            <p>
+                <b style="background-color: chartreuse;">প্রোগ্রামিং কোড:</b> <br>
+                <span style="background-color: yellow;">প্রোগ্রামিং কোড হল কম্পিউটারের ভাষায় লেখা নির্দেশাবলীর একটি ক্রম, যা কম্পিউটারকে একটি নির্দিষ্ট কাজ করার জন্য প্রয়োজনীয় নির্দেশনা দেয়।</span> এটি একটি প্রোগ্রামিং ভাষার মাধ্যমে লেখা হয় এবং কম্পিউটার এই কোড অনুসরণ করে কাঙ্ক্ষিত ফলাফল তৈরি করে। 
+                <br><br>
+                <span style="background-color: chartreuse;">আরও বিস্তারিতভাবে, প্রোগ্রামিং কোড হলো:</span> <br>
+                <table>
+                    <ol>
+                        <li>
+                            একটি নির্দিষ্ট সমস্যা সমাধানের জন্য কম্পিউটারের জন্য লিখিত নির্দেশাবলী। 
+                        </li>
+                        <li>
+                            একটি প্রোগ্রামিং ভাষা ব্যবহার করে লেখা হয়, যেমন- পাইথন, জাভা, সি++ ইত্যাদি। 
+                        </li>
+                        <li>
+                            প্রোগ্রামারের লেখা কোড কম্পিউটার বুঝতে পারে এমন ভাষায় (যেমন মেশিন কোড) রূপান্তরিত হয়, যা কম্পিউটার সরাসরি কার্যকর করতে পারে। 
+                        </li>
+                        <li>
+                             এটি একটি সফটওয়্যার বা অ্যাপ্লিকেশন তৈরির একটি গুরুত্বপূর্ণ অংশ। 
+                        </li>
+                    </ol>
+                </table>
+                
+                <span style="background-color: lawngreen;">সংক্ষেপে, প্রোগ্রামিং কোড হলো প্রোগ্রামারদের ভাষা যা কম্পিউটারকে তাদের কাজ বুঝিয়ে দেওয়ার জন্য ব্যবহার করা হয়। </span>
+
+            </p>
+
+            <br>
+
+            <img src="programming.jpg" alt="Programming" class="pro">
+        </div>
+       </blockquote>
+
+       <br><br> <br>
+       
+       <blockquote>
+        <div>
+            <p>
+                <b style="background-color:chartreuse;">ম্যালওয়্যার:</b> <br>
+               <span style="background-color: yellow;"> ম্যালওয়্যার হলো এক ধরনের ক্ষতিকর সফটওয়্যার, যা কম্পিউটার বা অন্যান্য ডিজিটাল ডিভাইসের ক্ষতি করার জন্য তৈরি করা হয়।</span> <br>
+                এটি ভাইরাস, ট্রোজান হর্স, স্পাইওয়্যার, র‍্যানসমওয়্যার সহ বিভিন্ন রূপে আসতে পারে। ম্যালওয়্যার ডিভাইসের স্বাভাবিক কার্যক্রমকে ব্যাহত করতে পারে, ব্যক্তিগত তথ্য চুরি করতে পারে, বা অন্যান্য ক্ষতিকর কাজ করতে পারে। <br> <br>
+                        <span style="background-color:chartreuse;">ম্যালওয়্যার সম্পর্কে আরও কিছু তথ্য:</span> <br> 
+                        ম্যালওয়্যার হলো "malicious software" এর সংক্ষিপ্ত রূপ, যার অর্থ ক্ষতিকর সফটওয়্যার। <br> <br>
+                        <span style="background-color:chartreuse">প্রকারভেদ:</span> <br>
+                        ম্যালওয়্যার বিভিন্ন ধরনের হতে পারে, যেমন: <br><br>
+                        <span style="background-color: yellow;">ভাইরাস:</span> যা নিজে থেকেই কপি হয়ে অন্য ফাইলে বা প্রোগ্রামে ছড়িয়ে পড়তে পারে। <br> <br>
+                        <span style="background-color: yellow;">ট্রোজান হর্স:</span> যা বৈধ প্রোগ্রামের ছদ্মবেশে ক্ষতি করে। <br><br>
+                        <span style="background-color: yellow;">স্পাইওয়্যার:</span> যা ব্যবহারকারীর অজান্তে তার কার্যকলাপ পর্যবেক্ষণ করে। <br><br>
+                       <span style="background-color: yellow;"> র‍্যানসমওয়্যার:</span> যা ব্যবহারকারীর ফাইল বা সিস্টেমকে লক করে মুক্তিপণ দাবি করে। <br><br>
+                        <span style="background-color:chartreuse;">ক্ষতি:</span> <br>
+                        ম্যালওয়্যার কম্পিউটারের কার্যকারিতা কমিয়ে দিতে পারে, ব্যক্তিগত তথ্য চুরি করতে পারে, সিস্টেম ক্র্যাশ করতে পারে, এবং অন্যান্য ক্ষতিকর কাজ করতে পারে। <br><br>
+                        <span style="background-color: yellow;">শনাক্তকরণ ও প্রতিরোধ:</span> <br>
+                        অ্যান্টিভাইরাস এবং অ্যান্টি-ম্যালওয়্যার সফটওয়্যার ব্যবহার করে ম্যালওয়্যার সনাক্ত ও প্রতিরোধ করা যায়। এছাড়াও, অজানা উৎস থেকে সফটওয়্যার ডাউনলোড না করা এবং সন্দেহজনক ইমেইল সংযুক্তি না খোলার মাধ্যমেও ম্যালওয়্যার থেকে নিরাপদ থাকা যায়। 
+            </p>
+            <img src="malware.jfif" alt="malware" class="malware">
+        </div>
+       </blockquote>
+
+       <br><br><br><br>
+
+       <blockquote>
+        <div>
+            <p>
+                <span style="background-color: chartreuse;">কম্পিউটার ওয়ার্ম:</span> <br>
+                <span style="background-color: yellow;">একটি কম্পিউটার ওয়ার্ম হল একটি স্বাধীন ম্যালঅয়্যার কম্পিউটার প্রোগ্রাম যা নিজেকে নকল করতে পারে যাতে তা অন্য কম্পিউটারে ছড়িয়ে পড়তে পারে।</span> <br> <br>
+                 প্রায়শই এটি ছড়িয়ে পড়ার করার কাজে কম্পিউটার নেটওয়ার্ক ব্যবহার করে এবং অন্য কম্পিউটারের নিরাপত্তা ব্যর্থতার সুযোগ নেয়।
+            </p> <br><br>
+            <img src="worm.jpeg" alt="কম্পিউটার ওয়ার্ম" class="worm">
+        </div>
+       </blockquote>
+
+       <br><br><br>
+
+       <blockquote>
+        <div>
+            <p> <span style="background-color: chartreuse;">ট্রোজান হর্স:</span> <br>
+                <span  style="background-color: yellow;">ট্রোজান হর্স হলো এক ধরণের ম্যালওয়্যার বা ক্ষতিকর প্রোগ্রাম যা বৈধ প্রোগ্রামের ছদ্মবেশে কম্পিউটারে প্রবেশ করে এবং ব্যবহারকারীর অজান্তে ক্ষতিকারক কার্যকলাপ ঘটায়।</span> <br><br>
+                 <span style="background-color: chartreuse;"> ট্রোজান হর্স যেভাবে কাজ করে:</span> <br><br>
+                 <table>
+                    <ul>
+                        <li>এটি নিজেকে একটি বৈধ প্রোগ্রামের মতো উপস্থাপন করে, যেমন গেম, সফটওয়্যার আপডেট বা ফাইল ডাউনলোড। </li> <br>
+                        <li> ব্যবহারকারী যখন এটিকে আসল প্রোগ্রাম ভেবে ডাউনলোড এবং ইনস্টল করে, তখন ট্রোজানটি কম্পিউটারে প্রবেশ করে। </li>
+                    </ul>
+                 </table>
+                    
+                   
+                    প্রবেশ করার পর, <span style="background-color: chartreuse;">ট্রোজানটি ব্যবহারকারীর অজান্তে বিভিন্ন ক্ষতিকর কাজ করতে পারে, যেমন:</span> <br> <br>
+                    <table>
+                        <ul>
+                            <li>
+                                ব্যক্তিগত তথ্য চুরি করা। 
+                            </li>
+                            <li>কম্পিউটার সিস্টেম হ্যাক করা। </li>
+                            <li>অন্যান্য ম্যালওয়্যার কম্পিউটারে ডাউনলোড করা। </li>
+                            <li>কম্পিউটারকে বটনেট এর অংশ হিসেবে ব্যবহার করা। </li>
+                        </ul>
+                    </table>
+                    
+                    
+                    <span style="background-color: chartreuse;">যেভাবে ট্রোজান হর্স থেকে নিজেকে রক্ষা করবেন:</span> <br><br>
+                    <table>
+                        <ul>
+                            <li>  অজানা বা সন্দেহজনক উৎস থেকে আসা ফাইল ডাউনলোড করা থেকে বিরত থাকুন। </li>
+                            <li>সফটওয়্যার এবং অপারেটিং সিস্টেম আপডেটেড রাখুন।</li>
+                            <li>
+                                শক্তিশালী অ্যান্টিভাইরাস এবং অ্যান্টি-ম্যালওয়্যার সফটওয়্যার ব্যবহার করুন। 
+                            </li>
+                            <li>
+                                অতিরিক্ত সতর্কতা হিসেবে, অপরিচিত বা সন্দেহজনক ইমেইল থেকে আসা লিঙ্কগুলিতে ক্লিক করা থেকে বিরত থাকুন। 
+                            </li>
+                        </ul>
+                    </table>
+                  
+                     
+                    <img src="trojan.png" alt=" ট্রোজান হর্স" class="trojan">
+                    
+                               
+            </p>
+        </div>
+       </blockquote>
+
+       <br><br><br>
+
+       <blockquote>
+        <div>
+            <span style="background-color: chartreuse;">Excutable File:</span> <br><br>
+              <span style="background-color: yellow;">  একটি এক্সিকিউটেবল ফাইল হল একটি কম্পিউটার ফাইল যাতে একটি প্রোগ্রাম থাকে যা সরাসরি অপারেটিং সিস্টেম বা অন্য কোনও সফ্টওয়্যার অ্যাপ্লিকেশন দ্বারা কার্যকর করা যেতে পারে ।</span>
+            
+              <img src="exe.png" alt="Excutable File" class="exe">
+        </div>
+       </blockquote>
+
+
+       
+       <br><br><br><br><br>
+
+       
+         <header>
+    <h1>পাঠ ১৬: ক্ষতিকারক সফটওয়্যার</h1>
+    <p>তৈরি করেছেন: <strong>TANZIM ARAFAT ORNOB</strong> | শ্রেণি ৮</p>
+    <img class="profile-pic" src="arnob.jpg" alt="Tanzim Arafat Ornob">
+  </header>
+
+  <main>
+    <section class="box">
+      <h2>১. ভাইরাস (Virus)</h2>
+      <p>ভাইরাস একটি প্রোগ্রাম যা স্বয়ংক্রিয়ভাবে নিজেকে কপি করে এবং অন্যান্য ফাইল বা কম্পিউটারে ছড়িয়ে পড়ে। এটি সিস্টেমের কার্যক্ষমতা নষ্ট করতে পারে।</p>
+      <img src="virus.webp" alt="ভাইরাস">
+    </section>
+
+
+    <section class="box">
+      <h2>৩. স্পাইওয়্যার (Spyware)</h2>
+      <p>স্পাইওয়্যার ব্যবহারকারীর অজান্তে তথ্য চুরি করে যেমন পাসওয়ার্ড, ব্রাউজিং হিস্টরি ইত্যাদি। এটি গোপনে কার্যকর হয়।</p>
+      <img src="spyware.jfif" alt="স্পাইওয়্যার">
+    </section>
+
+  
+
+    <section class="box">
+      <h2>৫. অ্যাডওয়্যার (Adware)</h2>
+      <p>অ্যাডওয়্যার ব্যবহারকারীর অজান্তে বিজ্ঞাপন প্রদর্শন করে এবং অনেক সময় ইচ্ছার বিরুদ্ধে সফটওয়্যার ইনস্টল করে।</p>
+      <img src="adware.jfif" alt="অ্যাডওয়্যার">
+    </section>
+
+
+    <section class="box">
+      <h2>৭. সুরক্ষার উপায়</h2>
+      <ul>
+        <li>নিয়মিত অ্যান্টিভাইরাস ব্যবহার ও আপডেট করুন।</li>
+        <li>অজানা ইমেল বা লিঙ্কে ক্লিক করবেন না।</li>
+        <li>বিশ্বস্ত উৎস ছাড়া সফটওয়্যার ইনস্টল করবেন না।</li>
+        <li>গুরুত্বপূর্ণ তথ্য নিরাপদে সংরক্ষণ করুন।</li>
+      </ul>
+    </section>
+
+    <section class="box">
+      <h2>৮. ফিডব্যাক দিন</h2>
+      <form id="feedbackForm">
+        <label>আপনার নাম:</label>
+        <input type="text" id="name" placeholder="নাম লিখুন" required>
+
+        <label>আপনার মন্তব্য:</label>
+        <textarea id="comment" rows="4" placeholder="আপনার মতামত লিখুন..." required></textarea>
+
+        <button type="submit">পাঠান</button>
+        <button type="reset">রিসেট করুন</button>
+      </form>
+      <p id="msg"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; ২০২৫ | শ্রেণি ৮ ICT | তৈরি করেছেন: TANZIM ARAFAT ORNOB</p>
+  </footer>
+
+  <script>
+    document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const msg = document.getElementById("msg");
+      msg.textContent = ধন্যবাদ, ${name}! আপনার ফিডব্যাক গ্রহণ করা হয়েছে।;
+    });
+  </script>
+
+
+
+        <br><br><br><br><br>
+      </div>
          <div>
             <p>
                <p style="color: blue;">
