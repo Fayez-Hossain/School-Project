@@ -1,109 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Project</title>
-    <style>
-        .head{
-            text-align: center;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 30px;
-        }
-       
-        a:hover{
-            background-color: yellow;
-        }
-         body{
-            background-color: #0B0C10;
-            background-attachment: fixed;
-         }
-         .prince{
-            width: 260px;
-            height: auto;
-            float: right;
-            border: 5px solid #06923E;
-            border-radius: 150px;
-         }
-         .pic{
-            float: right;
-            margin-right: 20px;
-            border: 2px dashed #06923E;
-            border-radius: 20px;
-            padding: 10px;
-            
-         }
-          a{
-        color: #06923E;
-      }
-      p{
-        color: #C5C6C7;
-      }
-      .arnob{
-        float: right;
-            margin-right: 20px;
-            border: 2px dashed #06923E;
-            border-radius: 20px;
-            padding: 10px;
-      }
-      
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #00ff00;
+      overflow: hidden;
+      background: black;
+      position: relative;
+    }
+
+    /* 🔹 Canvas Background (Hacker Style) */
+    #gameCanvas {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: black;
+    }
+
+    /* 🔹 Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 0px 2px 10px #00ff00;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav h2 {
+      color: #00ff00;
+      font-size: 24px;
+      text-shadow: 0 0 15px #00ff00;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00ff00;
+      text-shadow: 0 0 10px #00ff00;
+    }
+
+    /* 🔹 Main Container */
+    .container {
+      flex: 1;
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      box-shadow: 0px 0px 30px #00ff00;
+      animation: fadeIn 2s ease-in-out;
+      margin: auto;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .container img {
+      width: 200px;
+      height: 250px;
+      border-radius: 50%;
+      border: 4px solid #00ff00;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { box-shadow: 0 0 10px #00ff00; }
+      to { box-shadow: 0 0 30px #00ff00; }
+    }
+
+    h1 {
+      font-size: 35px;
+      margin-bottom: 10px;
+      color: #00ff00;
+      text-shadow: 0 0 20px #00ff00;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 25px;
+      color: #ddd;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: #00ff00;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.4s;
+      box-shadow: 0 0 15px #00ff00;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: black;
+      color: #00ff00;
+      box-shadow: 0 0 25px #00ff00;
+    }
+
+    /* 🔹 Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 0px -2px 10px #00ff00;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    footer span {
+      color: #00ff00;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
- 
+  <!-- 🔹 Canvas Background -->
+  <canvas id="gameCanvas"></canvas>
 
-<blockquote>
-    <div class="pic">
-    <img src="prince.jpg" alt="Prince" class="prince">
+  <!-- 🔹 Navigation Bar -->
+  <nav>
+    <h2>Prince</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <p>
-        <b style="color: #66FCF1; font-size: 20px;">Created By:</b> <br>
-       <b style="color: red;"> Fayez Hossain <b>(PRINCE)</b></b> <br>
-        Class: VIII. <br>
-        Section: C. <br>
-        Roll: 03 <br>
-        School: Bheramara Pilot High School. <br>
-        
-    </p>
-    <p>
-        Important Link's:
-        <br>
-        Git hub: <a href="https://github.com/Fayez-Hossain">Fayez-Hossain</a>
-        <br><br>
-        Another Website: <br>
-        <a href="https://fayez-hossain.github.io/Dark-and-Light-Coder/">Dark and Light Coder.</a>
-    </p>
-</div>
+  <!-- 🔹 Main Landing Content -->
+  <div class="container">
+    <img src="prince.jpg" alt="Prince">
+    <h1>Prince</h1>
+    <p>Welcome to my Website 💻</p>
+    <a href="service.html" class="btn">Enter System</a>
+  </div>
 
+  <!-- 🔹 Footer -->
+  <footer>
+    © 2025 <span>Prince</span>. All Rights Reserved.
+  </footer>
 
+  <!-- 🔹 JavaScript for Hacker Background -->
+  <script>
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-<span>
-    
-    <section>
-       
-       
-            <p>
-               <p style="text-align: center; color: #66FCF1;">
-                 <b style="font-size: 30px;">তথ্য ও যোগাযোগ প্রযুক্তি</b> <br><br>
-                <span style="color: #45A29E;"><b>তৃতীয় অধ্যায়</b>(<i>তথ্য ও যোগাযোগ প্রযুক্তির ব্যবহার</i>)</span> <br><br>
-                
-               </p>
-               <p>
-                <strong style="color: rgb(255, 2, 78);">Click on below link's.</strong>
-               </p>
-            <DIV class="link">
-            <a href="পাঠ ১৫.html" target="_blank">পাঠ ১৫:নিরাপত্তা বিষয়ক ধারণা </a> <br><br>
-            <a href="পাঠ ১৬.html" target="_blank">পাঠ ১৬:ক্ষতিকারক সফটওয়্যার</a> <br><br>
-            <a href="পাঠ ১৭.html" target="_blank">পাঠ ১৭:কম্পিউটার ভাইরাস</a><br><br>
-            <a href="পাঠ ১৮.html" target="_blank">পাঠ ১৮:অনলাইন পরিচয় ও তার নিরাপত্তা</a><br><br>
-            <a href="পাঠ ১৯.html" target="_blank">পাঠ ১৯:সাইবার অপরাধ</a><br><br>
-            <a href="পাঠ ২০.html" target="_blank">পাঠ ২০:দুর্নীতি নিরসন</a><br><br>
-            <a href="পাঠ ২১.html" target="_blank">পাঠ ২১:তথ্য অধিকার ও অধিকার আইন</a><br><br>
-            </DIV>
-            </p>
-       
-    </section>
-</span>
+    const particles = [];
+    const particleCount = 120;
 
+    for (let i = 0; i < particleCount; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 2,
+        dx: (Math.random() - 0.5) * 1,
+        dy: (Math.random() - 0.5) * 1
+      });
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      particles.forEach((p, i) => {
+        p.x += p.dx;
+        p.y += p.dy;
+
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "#00ff00";
+        ctx.fill();
+
+        // glowing green lines
+        particles.forEach((p2, j) => {
+          if (i !== j) {
+            let dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+            if (dist < 100) {
+              ctx.strokeStyle = "rgba(0,255,0,0.2)";
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(p2.x, p2.y);
+              ctx.stroke();
+            }
+          }
+        });
+      });
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
 </body>
 </html>
